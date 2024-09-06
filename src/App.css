@@ -1,0 +1,56 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 150px auto;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
+  animation: gradient-animation 15s ease infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app_main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px 8%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.task_column {
+  width: 33.33%;
+  margin: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.task_card {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
