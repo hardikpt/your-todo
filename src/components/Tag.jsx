@@ -3,24 +3,24 @@ import "./Tag.css";
 
 const Tag = ({ tagName, selectTag, selected }) => {
   const tagStyle = {
-    HTML: { backgroundColor: "#fda821" }, 
-    CSS: { backgroundColor: "#15d4c8" }, 
-    JavaScript: { backgroundColor: "#ffd12c" }, 
+    DevOps: { backgroundColor: "#f26c6e" }, 
+    Java: { backgroundColor: "#5382a1" }, 
+    BI: { backgroundColor: "#F2C80F" }, 
     React: { backgroundColor: "#4cdafc" }, 
     Android : { backgroundColor: "#78C257" }, 
-    Git : { backgroundColor: "#F1502F" }, 
+    Python : { backgroundColor: "#3599B8" }, 
     default: { backgroundColor: "#f9f9f9" }, 
   };
 
   return (
-    <button
+    <buttoni
       type="button"
       className="tag"
       style={selected ? tagStyle[tagName] : tagStyle.default}
       onClick={() => selectTag(tagName)}
     >
       {tagName}
-    </button>
+    </buttoni>
   );
 };
 

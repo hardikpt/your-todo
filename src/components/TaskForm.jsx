@@ -62,19 +62,19 @@ const TaskForm = ({ setTasks }) => {
         <div className="task_form_bottom_line">
           <div>
             <Tag
-              tagName="HTML"
+              tagName="DevOps"
               selectTag={selectTag}
-              selected={checkTag("HTML")}
+              selected={checkTag("DevOps")}
             />
             <Tag
-              tagName="CSS"
+              tagName="Java"
               selectTag={selectTag}
-              selected={checkTag("CSS")}
+              selected={checkTag("Java")}
             />
             <Tag
-              tagName="JavaScript"
+              tagName="BI"
               selectTag={selectTag}
-              selected={checkTag("JavaScript")}
+              selected={checkTag("BI")}
             />
             <Tag
               tagName="React"
@@ -89,9 +89,9 @@ const TaskForm = ({ setTasks }) => {
             />
 
             <Tag
-              tagName="Git"
+              tagName="Python"
               selectTag={selectTag}
-              selected={checkTag("Git")}
+              selected={checkTag("Python")}
             />
           </div>
 
