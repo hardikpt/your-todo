@@ -1,6 +1,7 @@
 {
   "name": "hardik-todo",
   "private": true,
+  "homepage": "https://hardikpt.github.io/your-todo",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
