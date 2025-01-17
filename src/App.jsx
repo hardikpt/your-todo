@@ -47,7 +47,7 @@ const App = () => {
           handleDelete={handleDelete}
         />
         <TaskColumn
-          title="Task Done"
+          title="Task Finish"
           icon={doneIcon}
           tasks={tasks}
           status="done"
