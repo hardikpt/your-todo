@@ -6,20 +6,18 @@ import TodoIcon from "./assets/bullseye.png";
 import doingIcon from "./assets/star.png";
 import doneIcon from "./assets/check.png";
 
-// Retrieve tasks from localStorage
 const oldTasks = localStorage.getItem("tasks");
 console.log(oldTasks);
 
 const App = () => {
-  // Initialize tasks state with either parsed localStorage data or an empty array
-  const [tasks, setTasks] = useState(oldTasks ? JSON.parse(oldTasks) : [] || []);
+  const [tasks, setTasks] = useState(
+    oldTasks ? JSON.parse(oldTasks) : [] || []
+  );
 
-  // Update localStorage whenever tasks change
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  // Handle task deletion
   const handleDelete = (taskIndex) => {
     const newTasks = tasks.filter((task, index) => index !== taskIndex);
     setTasks(newTasks);
@@ -32,7 +30,7 @@ const App = () => {
       <TaskForm setTasks={setTasks} />
       <main className="app_main">
         <TaskColumn
-          title="To do"
+          title="Task To do"
           icon={TodoIcon}
           tasks={tasks}
           status="todo"
@@ -40,14 +38,14 @@ const App = () => {
         />
 
         <TaskColumn
-          title="Doing"
+          title="Task Doing"
           icon={doingIcon}
           tasks={tasks}
           status="doing"
           handleDelete={handleDelete}
         />
         <TaskColumn
-          title="Done"
+          title="Task Done"
           icon={doneIcon}
           tasks={tasks}
           status="done"
