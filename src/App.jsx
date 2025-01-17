@@ -32,7 +32,7 @@ const App = () => {
       <TaskForm setTasks={setTasks} />
       <main className="app_main">
         <TaskColumn
-          title="To do"
+          title="Task To do"
           icon={TodoIcon}
           tasks={tasks}
           status="todo"
@@ -40,14 +40,14 @@ const App = () => {
         />
 
         <TaskColumn
-          title="Doing"
+          title="Task Doing"
           icon={doingIcon}
           tasks={tasks}
           status="doing"
           handleDelete={handleDelete}
         />
         <TaskColumn
-          title="Done"
+          title="Task Done"
           icon={doneIcon}
           tasks={tasks}
           status="done"
