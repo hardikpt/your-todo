@@ -30,7 +30,7 @@ const App = () => {
       <TaskForm setTasks={setTasks} />
       <main className="app_main">
         <TaskColumn
-          title="Task To do"
+          title="Task Todo"
           icon={TodoIcon}
           tasks={tasks}
           status="todo"
